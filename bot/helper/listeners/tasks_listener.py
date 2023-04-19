@@ -457,7 +457,7 @@ class MirrorLeechListener:
                                 buttons.ubutton("🌐 View Link", share_urls)
                 buttons = extra_btns(buttons)
                 if self.dmMessage:
-                    msg += '\n\n<b>Links has been sent in your DM.</b>'
+                    msg += '\n\n<b>Links has been sent in your DM and in Dumps. Check Notes for Link.</b>'
                     await sendMessage(self.message, msg)
                     await sendMessage(self.dmMessage, msg, buttons.build_menu(2))
                 else:
